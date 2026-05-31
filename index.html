@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherTracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ WeatherTracker</h1>
+<p id="dataHora"></p>
+        <div class="search-box">
+            <input
+                type="text"
+                id="cidade"
+                placeholder="Digite uma cidade"
+            >
+
+            <button id="buscar">
+                Buscar
+            </button>
+        </div> 
+        <div id="historico"></div>
+
+        <div id="resultado" class="resultado">
+
+            <h2>Pesquise uma cidade</h2>
+            <p>As informações do clima aparecerão aqui.</p>
+
+        </div>
+ <button id="btnConverter" style="display:none">°C / °F</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

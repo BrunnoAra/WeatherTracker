@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0984e3;
+    font-size: 28px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #74b9ff;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0984e3;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #0984e3;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0652dd;
+}
+
+.resultado {
+    margin-top: 25px;
+}
+
+.resultado h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #2d3436;
+}
+
+.resultado p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #636e72;
+    padding: 8px;
+    background: #f0f7ff;
+    border-radius: 8px;
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .resultado p {
+        font-size: 14px;
+    }
+}
+#dataHora {
+    text-align: center;
+    color: #636e72;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+#historico {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#historico span {
+    display: inline-block;
+    background: #74b9ff;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#historico span:hover {
+    background: #0984e3;
+}
+#btnConverter {
+    margin-top: 10px;
+    padding: 6px 14px;
+    font-size: 13px;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
