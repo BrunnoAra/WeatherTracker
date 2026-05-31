@@ -31,8 +31,7 @@ const resultado = document.getElementById("resultado");
 botao.addEventListener("click", buscarClima);
 
 async function buscarClima() {
-
-    const cidade = document.getElementById("cidade").value;
+    const cidade = document.getElementById("cidade").value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 if (!historicoCidades.includes(cidade)) {
     historicoCidades.push(cidade);
     atualizarHistorico();
